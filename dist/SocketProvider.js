@@ -136,6 +136,7 @@ var useSocketSelector = function useSocketSelector(selector) {
   return selector(state);
 };
 var useEmit = function useEmit() {
+  var socket = useSocket();
   return socket.emit;
 };
 var useEmitEvent = function useEmitEvent(eventName) {
