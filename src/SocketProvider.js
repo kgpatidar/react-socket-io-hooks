@@ -53,6 +53,7 @@ export const useSocketSelector = selector => {
 }
 
 export const useEmit = () => {
+  const socket = useSocket();
   return socket.emit;
 }
 
